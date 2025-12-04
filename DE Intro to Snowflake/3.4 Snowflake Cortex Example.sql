@@ -52,3 +52,7 @@ SELECT SNOWFLAKE.CORTEX.COMPLETE(
     'mistral-7b',
     CONCAT([INSERT THINGS TO CONCAT])
 ) FROM TASTY_BYTES.RAW_POS.MENU LIMIT 5;
+
+-- Notes for usign LLM features in Snowflake Cortex:
+-- 1. You can use different models by changing the first argument to SNOWFLAKE
+-- 2. You can pass in prompt history as an array of role/content objects
